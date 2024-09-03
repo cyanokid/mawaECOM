@@ -30,8 +30,8 @@ SECRET_KEY = 'django-insecure-o&dzgf7$003_e%1tkxpl0*r%@19j)9i6xl003#jc0(74(^cy$f
 DEBUG = True
 
 # Domain stuff
-ALLOWED_HOSTS = ['mawaecom-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = []
+ALLOWED_HOSTS = ['mawaecom-production.up.railway.app', 'https://mawaecom-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['mawaecom-production.up.railway.app', 'https://mawaecom-production.up.railway.app']
 
 
 # Application definition
@@ -93,7 +93,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway' ,
         'USER': 'postgres',
-        'PASSWORD': os.environ.get('DB_PASSWORD_YO'),
+        'PASSWORD': os.environ['DB_PASSWORD_YO'],
         'HOST': 'autorack.proxy.rlwy.net',
         'PORT': '14284',
     }
