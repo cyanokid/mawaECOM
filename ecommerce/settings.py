@@ -31,7 +31,7 @@ DEBUG = True
 
 # Domain stuff
 ALLOWED_HOSTS = ['mawaecom-production.up.railway.app', 'https://mawaecom-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['mawaecom-production.up.railway.app', 'https://mawaecom-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://mawaecom-production.up.railway.app']
 
 
 # Application definition
