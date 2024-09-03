@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-o&dzgf7$003_e%1tkxpl0*r%@19j)9i6xl003#jc0(74(^cy$f
 DEBUG = True
 
 # Domain stuff
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mawaecom-production.up.railway.app']
 CSRF_TRUSTED_ORIGINS = []
 
 
